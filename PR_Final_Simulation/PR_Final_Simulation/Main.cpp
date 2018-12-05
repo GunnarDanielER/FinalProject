@@ -15,9 +15,18 @@ using std::time;
 int main() {
 	srand(time(NULL));
 
-	Patient P1;
-	cout << P1.displaySeverity() << endl;
+	int patientsPerHour;
+	int numDoctors;
+	int numNurses;
+	cout << "Enter the numer of patients per hour (cannot be greater than 60 or less than 0), " << endl << "the number of total doctors, then the number of total nurses: ";
+	cin >> patientsPerHour >> numDoctors >> numNurses;
+	if (patientsPerHour > 60 || patientsPerHour < 0) {
+		cout << "Invalid number of patients. Restart program and enter correct amount." << endl;
+	}
+	else {
 
+	}
+	return 0;
 
 
 

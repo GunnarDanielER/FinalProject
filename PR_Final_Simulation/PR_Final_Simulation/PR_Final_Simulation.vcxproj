@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Doctor.h" />
+    <ClInclude Include="Hospital.h" />
     <ClInclude Include="Nurse.h" />
     <ClInclude Include="Patient.h" />
   </ItemGroup>
