@@ -1,3 +1,7 @@
+/*
+test for commits
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
