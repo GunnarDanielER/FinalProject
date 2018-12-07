@@ -22,6 +22,7 @@ int main() {
 	int patientsPerHour;
 	int numDoctors;
 	int numNurses;
+	int runtime;
 	cout << "Enter the numer of patients per hour (cannot be greater than 60 or less than 0), " << endl << "the number of total doctors, then the number of total nurses: ";
 	cin >> patientsPerHour >> numDoctors >> numNurses;
 	if (patientsPerHour > 60 || patientsPerHour < 0) {
@@ -29,7 +30,17 @@ int main() {
 		return 0;
 	}
 	else {
-
+		cout << "Enter hospital run time, in hours (at least 168): " << endl;
+		cin >> runtime;
+		if (runtime <= 168)
+		{
+			cout << "Invalid run time. Setting run time to 168 hours" << endl;
+			runtime = 168;
+		}
+		else
+		{
+			//runHour() to runtime value
+		}
 	}
 	return 0;
 
