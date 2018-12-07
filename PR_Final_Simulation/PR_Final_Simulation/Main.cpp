@@ -26,6 +26,7 @@ int main() {
 	cin >> patientsPerHour >> numDoctors >> numNurses;
 	if (patientsPerHour > 60 || patientsPerHour < 0) {
 		cout << "Invalid number of patients. Restart program and enter correct amount." << endl;
+		return 0;
 	}
 	else {
 
