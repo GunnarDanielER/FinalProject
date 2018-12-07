@@ -25,9 +25,13 @@ private:
 		treated = 0;
 	}
 
-	void RunHour() {
+	void RunDay() {
+		int hp = patientsPerHour; //temporary variable, patients for this hour.
 
+		for (int i = 0; i < 1440; i++) {
+			
 
+		}
 
 
 	}
