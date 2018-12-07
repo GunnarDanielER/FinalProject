@@ -28,7 +28,7 @@ private:
 	void RunDay() {
 		int hp = patientsPerHour; //temporary variable, patients for this hour.
 
-		for (int i = 0; i < 1440; i++) {
+		for (int i = 0; i < 10080; i++) {
 			
 
 		}
