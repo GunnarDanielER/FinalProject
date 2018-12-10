@@ -14,6 +14,8 @@ public:
 		Severity = doublerand();
 	}
 
+	unsigned int id;
+
 
 
 	int doublerand() {

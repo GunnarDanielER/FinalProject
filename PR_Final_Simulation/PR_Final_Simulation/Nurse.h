@@ -11,13 +11,12 @@ private:
 
 public:
 
-	Nurse(int wTime, bool available) {
-		wTime = nurseTimer();
-		WorkTime = wTime;
-		available = false;
-		isAvailable = available;
+	Nurse() {
+		WorkTime = nurseTimer();
+		isAvailable = true;
 	}
 
+	unsigned int id;
 
 	int nurseTimer() {
 		int var = rand() % 10 + 1;

@@ -10,14 +10,13 @@ private:
 	bool isAvailable;
 
 public:
-	
-	Doctor(int wTime, bool available) {
-		wTime = doctorTimer();
-		WorkTime = wTime;
-		available = false;
-		isAvailable = available;
+
+	Doctor() {
+		WorkTime = doctorTimer();
+		isAvailable = true;
 	}
 	
+	unsigned int id;
 	
 	int doctorTimer() {
 		int var = rand() % 20 + 1;
