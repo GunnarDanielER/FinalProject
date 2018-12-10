@@ -8,6 +8,7 @@ test for commits
 #include "Doctor.h"
 #include "Nurse.h"
 #include "Patient.h"
+#include "Hospital.h"
 using std::cout;
 using std::endl;
 using std::cin;
@@ -30,17 +31,9 @@ int main() {
 		return 0;
 	}
 	else {
-		cout << "Enter hospital run time, in hours (at least 168): " << endl;
-		cin >> runtime;
-		if (runtime <= 168)
-		{
-			cout << "Invalid run time. Setting run time to 168 hours" << endl;
-			runtime = 168;
-		}
-		else
-		{
-			//runHour() to runtime value
-		}
+		
+		//RunDay();
+
 	}
 	return 0;
 
