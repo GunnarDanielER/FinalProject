@@ -30,10 +30,10 @@ private:
 
 		for (int i = 0; i < 10080; i++) {
 			
-
+			
 		}
 
-
+		FinalReport();
 	}
 
 	void FinalReport() {
