@@ -27,10 +27,20 @@ private:
 
 	void RunDay() {
 		int hp = patientsPerHour; //temporary variable, patients for this hour.
-
+		int count = 0; //counter variable
 		for (int i = 0; i < 10080; i++) {
 			
-			
+			if (count <= hp)
+			{
+				count++;
+				//create a Patient()
+				
+			}
+			else
+			{
+				count = 60 - hp;
+			}
+			cout << count;
 		}
 
 		FinalReport();

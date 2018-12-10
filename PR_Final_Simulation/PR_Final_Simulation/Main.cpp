@@ -8,6 +8,7 @@ test for commits
 #include "Doctor.h"
 #include "Nurse.h"
 #include "Patient.h"
+#include "Hopsital.h"
 using std::cout;
 using std::endl;
 using std::cin;
@@ -30,8 +31,8 @@ int main() {
 		return 0;
 	}
 	else {
-
-
+		
+		RunDay();
 
 	}
 	return 0;
