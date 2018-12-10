@@ -8,7 +8,7 @@ test for commits
 #include "Doctor.h"
 #include "Nurse.h"
 #include "Patient.h"
-#include "Hopsital.h"
+//#include "Hopsital.h" this include line is not working, at least on my computer - Daniel
 using std::cout;
 using std::endl;
 using std::cin;
@@ -32,7 +32,7 @@ int main() {
 	}
 	else {
 		
-		RunDay();
+		//RunDay();
 
 	}
 	return 0;
