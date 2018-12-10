@@ -1,0 +1,3 @@
+﻿  Main.cpp
+c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\main.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  PR_Final_Simulation.vcxproj -> C:\Users\dtucker21\Source\Repos\PR_Final_Simulation_GDC5\PR_Final_Simulation\x64\Debug\PR_Final_Simulation.exe
