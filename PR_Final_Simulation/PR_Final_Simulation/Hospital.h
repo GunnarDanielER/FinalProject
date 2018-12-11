@@ -28,6 +28,12 @@ public:
 		RunDay();
 	}
 
+	// Outputs the results of the simulation to the console.
+	void FinalReport() {
+		cout << "Total number of patients treated: " << treated << endl;
+		cout << "Total patients left in waiting room: " << waitingRoom << endl;
+	}
+
 	// Constructor for the Hospital. Takes three variables.
 	Hospital(int P, int D, int N) {
 
@@ -88,12 +94,6 @@ private:
 				--pph; // Decrements the Patients that need to be added for this hour.
 			}
 		}
-	}
-
-	// Outputs the results of the simulation to the console.
-	void FinalReport() {
-		cout << "Total number of patients treated: " << treated << endl;
-		cout << "Total patients left in waiting room: " << waitingRoom << endl;
 	}
 };
 #endif

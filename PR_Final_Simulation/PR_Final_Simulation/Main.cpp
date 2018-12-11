@@ -41,6 +41,7 @@ int main() {
 	else {
 		Hospital ER(patientsPerHour, numDoctors, numNurses);
 		ER.startLoop();
+		ER.FinalReport();
 	}
 	return 0;
 }
