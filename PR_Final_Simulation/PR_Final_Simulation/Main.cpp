@@ -39,7 +39,7 @@ int main() {
 		return 0;
 	}
 	else {
-		//RunDay();
+		Hospital ER(patientsPerHour, numDoctors, numNurses);
 	}
 	return 0;
 }

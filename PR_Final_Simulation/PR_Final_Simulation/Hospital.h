@@ -24,10 +24,9 @@ public:
 	int waitingRoom;
 	int treated;
 
-private:
 	// Constructor for the Hospital. Takes three variables.
 	Hospital(int P, int D, int N) {
-		
+
 		// Variables used to initalize the hospital
 		patientsPerHour = P;
 		waitingRoom = 0;
@@ -52,6 +51,7 @@ private:
 		}
 	}
 
+private:
 	// Main loop for the hospital simulation. Runs for 1 week.
 	void RunDay() {
 		int pph; // temporary variable, patients for this hour. resets every hour.
