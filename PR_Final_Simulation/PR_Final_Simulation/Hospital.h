@@ -19,6 +19,10 @@ class Hospital : public Nurse, public Doctor, public Patient {
 public:
 	// Variable to set how many patients are added every hour.
 	int patientsPerHour;
+
+	// Temporary patients used to compare patients.
+	Patient tempPatient;
+	Patient tempPatient2;
 	
 	// Variables that store the treated and untreated patients. Used for output.
 	int waitingRoom;
@@ -93,6 +97,18 @@ private:
 				++patientID; // Increments the Pateint ID.
 				--pph; // Decrements the Patients that need to be added for this hour.
 			}
+
+			// Checks if there are any patients in the list then takes the most severe
+			if (patients.size() > 0) {
+				tempPatient = patients.front();
+				patients.pop_front();
+				// Temporary fix to run patients through the simulation
+				--waitingRoom;
+				++treated;
+			}
+
+			// Treats the patients with either a Doctor or Nurse.
+			
 		}
 	}
 };

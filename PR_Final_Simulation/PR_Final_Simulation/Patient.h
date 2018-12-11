@@ -11,10 +11,9 @@ using std::rand;
 class Patient {
 private:
 
-	int Severity; // Variable that stores the severity level used to decide who can treat the patient.
-
-
 public:
+
+	int Severity; // Variable that stores the severity level used to decide who can treat the patient.
 
 	// Constructor to create a patient with a random severity level.
 	Patient() {
