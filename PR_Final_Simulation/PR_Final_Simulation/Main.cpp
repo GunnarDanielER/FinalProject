@@ -40,6 +40,7 @@ int main() {
 	}
 	else {
 		Hospital ER(patientsPerHour, numDoctors, numNurses);
+		ER.startLoop();
 	}
 	return 0;
 }

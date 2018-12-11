@@ -24,6 +24,10 @@ public:
 	int waitingRoom;
 	int treated;
 
+	void startLoop() {
+		RunDay();
+	}
+
 	// Constructor for the Hospital. Takes three variables.
 	Hospital(int P, int D, int N) {
 
