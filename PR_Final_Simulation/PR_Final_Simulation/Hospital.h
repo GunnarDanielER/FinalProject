@@ -45,6 +45,7 @@ public:
 			Doctor Doc;
 			Doc.id = Did;
 			Doctors.push_back(Doc);
+			Did++;
 		}
 		// Takes the created Nurses and gives them an ID.
 		while (Nid < N) {
@@ -52,6 +53,7 @@ public:
 			Nurse n;
 			n.id = Nid;
 			Nurses.push_back(n);
+			Nid++;
 		}
 	}
 
