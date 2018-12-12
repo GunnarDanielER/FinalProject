@@ -31,4 +31,4 @@
 *.out
 *.app
 *.db
-/PR_Final_Simulation/.vs/PR_Final_Simulation/v15/Browse.VC.opendb
+*.opendb
