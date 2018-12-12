@@ -94,7 +94,7 @@ private:
 				patients.push_back(P);
 
 				++waitingRoom; // Adds 1 pateint to the waiting room.
-				++patientID; // Increments the Pateint ID.
+				++patientID; // Increments the Patient ID.
 				--pph; // Decrements the Patients that need to be added for this hour.
 			}
 
@@ -104,7 +104,19 @@ private:
 				patients.pop_front();
 				// Temporary fix to run patients through the simulation
 				--waitingRoom;
-				++treated;
+				if (tempPatient.Severity <= 10)
+				{ //Treat with Nurse
+					
+					
+					++treated;
+				}
+				else
+				{ // Treat with Doctor
+
+
+					++treated;
+				}
+				//remove patient from queue, add name to list of treated
 			}
 
 			// Treats the patients with either a Doctor or Nurse.
