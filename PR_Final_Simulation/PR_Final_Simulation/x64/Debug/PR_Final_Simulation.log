@@ -1,4 +1,6 @@
 ﻿  Main.cpp
-c:\users\cjori\desktop\dsfinal\pr_final_simulation\pr_final_simulation\main.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\cjori\desktop\dsfinal\pr_final_simulation\pr_final_simulation\main.cpp(27): warning C4101: 'runtime': unreferenced local variable
-  PR_Final_Simulation.vcxproj -> C:\Users\cjori\Desktop\dsfinal\PR_Final_Simulation\x64\Debug\PR_Final_Simulation.exe
+c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\hospital.h(42): error C2512: 'Nurse': no appropriate default constructor available
+  c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\nurse.h(12): note: see declaration of 'Nurse'
+c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\hospital.h(63): error C2512: 'Nurse': no appropriate default constructor available
+  c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\nurse.h(12): note: see declaration of 'Nurse'
+c:\users\dtucker21\source\repos\pr_final_simulation_gdc5\pr_final_simulation\pr_final_simulation\main.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data

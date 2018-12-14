@@ -24,6 +24,9 @@ public:
 		isAvailable = available;
 	}
 
+	// ID used to differentiate the Nurses and keep track of which is which.
+	unsigned int id;
+
 	// Random generator used in the constructor to decide the work time of the nurse.
 	int nurseTimer() {
 		int var = rand() % 10 + 1;
