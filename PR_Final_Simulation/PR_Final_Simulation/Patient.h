@@ -1,6 +1,5 @@
 /*
-	Class that contains variables for the patient class. pateints have a severity level that will decide if a nurse can treat them or 
-	if it must be a doctor who treats them. 
+	Patient class file. Used to create patients with a random severity. 
 */
 
 #include <cstdlib>
@@ -12,16 +11,17 @@ using std::rand;
 class Patient {
 private:
 
-	int Severity; // Variable that stores the severity level used to decide who can treat the patient.
-
-
 public:
+
+	int Severity; // Variable that stores the severity level used to decide who can treat the patient.
 
 	// Constructor to create a patient with a random severity level.
 	Patient() {
 		Severity = doublerand();
 	}
 
+	// ID used to differentiate the Patients and keep track of which is which.
+	unsigned int id;
 
 	// Random number generator used to set the severity level in the constructor.
 	int doublerand() {
@@ -45,11 +45,9 @@ public:
 		}
 	}
 
+	// Used to display the severity of the patient.
 	int displaySeverity() {
 		return Severity;
 	}
-
 };
-
-
 #endif

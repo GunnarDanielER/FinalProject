@@ -1,6 +1,5 @@
 /*
-Class that contains the variables for the doctor who will treat more severe patients or treat patients if all nurses are busy.
-Contains a WorkTime and isAvailable variables.
+	Doctor class file. Used to create Doctors with a random work time and sets their availability to true.
 */
 
 #include <cstdlib>
@@ -11,26 +10,24 @@ using std::rand;
 
 class Doctor {
 private:
-	int WorkTime; // Tells the program how long it will take to teat a patient and is randomly generated between a specific range for each patient.
-	bool isAvailable; // Tells the program if the doctor is available to treat a patient.
+	// Variables that store the time it takes to operate and the doctors availability.
+	int WorkTime;
+	bool isAvailable;
 
 public:
-	
-	// Constructor to create a doctor with a random WorkTime and initializes the isAvailable value to false.
-	Doctor(int wTime, bool available) {
-		wTime = doctorTimer();
-		WorkTime = wTime;
-		available = false;
-		isAvailable = available;
+	// Constructor that creates a doctor with a random work time and sets its availability to true.
+	Doctor() {
+		WorkTime = doctorTimer();
+		isAvailable = true;
 	}
 	
-	// Random generator used in the constructor to decide the work time of the doctor.
+	// ID used to differentiate the doctors and keep track of which is which.
+	unsigned int id;
+	
+	// Random number generator to set the doctors work time.
 	int doctorTimer() {
 		int var = rand() % 20 + 1;
 		return var;
-
 	}
 };
-
-
 #endif
